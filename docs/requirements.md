@@ -1,4 +1,4 @@
-# TODO APP 需求清单（v1）
+# MCP TODO APP 需求清单（MVP）
 
 ## 1. 目标
 
