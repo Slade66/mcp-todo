@@ -10,7 +10,7 @@ import (
 type TodoID string
 
 // 使业务不依赖具体数据库实现
-type TodoRepository interface {
+type TodoRepo interface {
 	// 创建
 	Create(ctx context.Context, newTodo Todo) (Todo, error)
 

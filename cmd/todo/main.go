@@ -1,5 +1,13 @@
 package main
 
+import (
+	"github.com/Slade66/mcp-todo/internal/todo/repo/sqlite"
+)
+
 func main() {
-	println(1)
+	db, err := sqlite.NewSQLiteRepo("todo.db")
+	if err != nil {
+		panic(err)
+	}
+	db.Migrate()
 }

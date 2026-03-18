@@ -8,3 +8,7 @@
 ### 目录结构
 
 按业务聚合，而不是按类型分层。相关的代码放在一起。
+
+### 编译依赖
+
+`go get github.com/mattn/go-sqlite3` 库编译时依赖 GCC，需要先装 `gcc`，并 `go env -w CGO_ENABLED=1`。
